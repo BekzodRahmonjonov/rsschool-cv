@@ -20,5 +20,8 @@ My name is Bekzod. I am 19 years old. Now I'm Junior Frontend Developer in Calyp
 
 ***
 
-### Skills
+### Hard Skills
 
+Core part: HTML, CSS, JS<br>
+Frameworks: VueJS<br>
+Others: Git/GitHub, Sass(Scss), 

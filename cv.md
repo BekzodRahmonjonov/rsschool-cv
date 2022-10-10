@@ -73,3 +73,12 @@ I have more than 1-year of experience. I am working in a Tashkent Company called
 2. CSS - FreeCodeCamp
 3. JavaScript - FreeCodeCamp, Vladilen Minin JavaScript course.
 4. VueJS - Vladilen Minin VueJs course.
+
+***
+
+### Languages
+
+1. Uzbek - Native<br>
+2. Russian - Intermediate<br>
+3. English - Intermediate<br>
+

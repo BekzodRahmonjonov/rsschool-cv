@@ -3,7 +3,7 @@
 
 ***
 
-### Contact Information:
+### Contact Information
 
 **Phone*:* +998 99 729 08 26<br>
 **Email:** bekzod03233@mail.ru
@@ -24,4 +24,37 @@ My name is Bekzod. I am 19 years old. Now I'm Junior Frontend Developer in Calyp
 
 Core part: HTML, CSS, JS<br>
 Frameworks: VueJS<br>
-Others: Git/GitHub, Sass(Scss), 
+Others: Git/GitHub, Sass(Scss), Bootstrap/BootsrapVue, Element UI, TailwindCsc, etc.
+
+***
+
+### Code Example
+
+```
+function bubbleSort(array) {
+    let len = array.length;
+    for (let i = 0; i < len; i++) {
+        for (let j = 0; j < len; j++) {
+            if (array[j] > array[j + 1]) {
+                let max = array[j];
+                array[j] = array[j + 1];
+                array[j + 1] = max;
+            }
+        }
+    }
+    return array;
+};
+
+function bubbleSortBase(array) { 
+    let len = array.length;
+    for (let i=0; i<len; i++) {
+        if (array[i] > array[i+1]) {
+            array[i] = array[i]+array[i+1];
+            array[i+1] = array[i]-array[i+1];
+            array[i]= array[i]-array[i+1];
+            i = -1;
+        }
+    };
+    return array;
+
+```

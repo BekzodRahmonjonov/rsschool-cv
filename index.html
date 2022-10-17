@@ -24,9 +24,7 @@
                             <video poster="./assets/images/logo-video.png" playsinline autoplay muted loop>
                              <source src="./assets/Bekzod.mp4" type="video/mp4">
                            </video>
-                            <!-- <p class="v-text">Hello World</p> -->
                          </div>
-                            <!-- <img id="logo" class="logo" src="https://raw.githubusercontent.com/ByronMike/MyPortfolio/3428631856c6cf4812e42b48b2af2003ea6150c4/Resources/images/logo.svg"  alt="Michaël Auger"> -->
                         </a>
                     </div>
                     <div class="right-part">
@@ -70,7 +68,9 @@
                           <img src="./assets/images/github-avatar.jpg" alt="Photo by Bekzod RakhmanAli">
                         </div>
                         <div class="container-text">
-                            <h3>Frontend Developer</h3>
+                            <h1>Frontend Developer</h1>
+                            <br>
+                            <p>My name is Bekzod RakhmanAli</p>
                             <p>Frontend web developer, I aim for efficiency in writing code in order to produce clean and quality code. Web design and user experience also remain at the heart of my concerns.<span class="half-overline">un code propre et de qualité</span>.  Le Web design et <span class="half-overline">l’expérience utilisateur</span> restent également au coeur de mes préocupations. 
                             </p>
                             <br>
@@ -175,6 +175,57 @@
                     </div>
                 </div>
             </section>
+            <!-- Code Example -->
+            <section class="section-code-example">
+              <div class="wrapper">
+                <h2>Code Example</h2>
+                <div class="code-example">
+                  <pre>
+                    let array = [5,3,2];
+                    //Average base;
+                    function bubbleSort(array) {
+                        let len = array.length;
+                        for (let i = 0; i < len; i++) {
+                            for (let j = 0; j < len; j++) {
+                                if (array[j] > array[j + 1]) {
+                                    let max = array[j];
+                                    array[j] = array[j + 1];
+                                    array[j + 1] = max;
+                                }
+                            }
+                        }
+                        return array;
+                    };
+                    console.log(bubbleSort(array));
+
+
+                    //Base 
+                    function bubbleSortBase(array) { 
+                        let len = array.length;
+                        for (let i=0; i<len; i++) {
+                            if (array[i] > array[i+1]) {
+                                array[i] = array[i]+array[i+1];
+                                array[i+1] = array[i]-array[i+1];
+                                array[i]= array[i]-array[i+1];
+                                i = -1;
+                            }
+                        };
+                        return array;
+                        
+                    }
+                  </pre>
+                </div>
+              </div>
+            </section>
+            <!-- Education and English level Section -->
+            <section>
+              <div class="wrapper">
+                <h2 class="educatin-english-level">Education and English level</h2>
+                <br>
+                <p>Education: Self study</p>
+                <p>English Level: Intermediate</p>
+              </div>
+            </section>
             <!-- PROJECTS SECTION -->
             <section id="projects" class="section-projects">
                 <div class="wrapper">
@@ -204,87 +255,9 @@
                             <div id="container-surfco-screenshot1" class="object-fit project-container-screenshot surfco-screenshot">
                                 <img src="./assets/images/wasteless.png" alt="Screenshot du site Surf-Community.fr" aria-hidden="true">
                             </div>
-                            <!-- <div id="container-surfco-screenshot2" class="object-fit project-container-screenshot surfco-screenshot">
-                                <img src="https://github.com/ByronMike/MyPortfolio/blob/main/Resources/images/SurfCommunity2.png?raw=true" alt="Screenshot du site Surf-Community.fr" aria-hidden="true">
-                            </div>
-                            <div id="container-surfco-screenshot3" class="object-fit project-container-screenshot surfco-screenshot">
-                                <img src="https://github.com/ByronMike/MyPortfolio/blob/main/Resources/images/SurfCommunity3.png?raw=true" alt="Screenshot du site Surf-Community.fr" aria-hidden="true">
-                            </div>
-                            <div id="container-surfco-screenshot4" class="object-fit project-container-screenshot surfco-screenshot">
-                                <img src="https://github.com/ByronMike/MyPortfolio/blob/main/Resources/images/SurfCommunity4.png?raw=true" alt="Screenshot du site Surf-Community.fr" aria-hidden="true">
-                            </div> -->
                         </div>
                     </div>
-                    <!-- PROJECTS : n°2-->
-                    <!-- <div id="container-project2" class="container-project">
-                        <div class="container-img">
-                            <div id="container-myquiver-screenshot1" class="project-container-screenshot myquiver-screenshot">
-                                <img src="https://github.com/ByronMike/MyPortfolio/blob/main/Resources/images/MyQuiver_1.jpg?raw=true" alt="Screenshot de l'application mobile MyQuiver" aria-hidden="true">
-                            </div>
-                            <div id="container-myquiver-screenshot2" class="project-container-screenshot myquiver-screenshot">
-                                <img src="https://github.com/ByronMike/MyPortfolio/blob/main/Resources/images/MyQuiver_2.jpg?raw=true" alt="Screenshot de l'application mobile MyQuiver" aria-hidden="true">
-                            </div>
-                            <div id="container-myquiver-screenshot3" class="project-container-screenshot myquiver-screenshot">
-                                <img src="https://github.com/ByronMike/MyPortfolio/blob/main/Resources/images/MyQuiver_3.jpg?raw=true" alt="Screenshot de l'application mobile MyQuiver" aria-hidden="true">
-                            </div>
-                            <div id="container-myquiver-screenshot4" class="project-container-screenshot myquiver-screenshot">
-                                <img src="https://github.com/ByronMike/MyPortfolio/blob/main/Resources/images/MyQuiver_4.jpg?raw=true" alt="Screenshot de l'application mobile MyQuiver" aria-hidden="true">
-                            </div>
-                        </div>
-                        <div class="container-text">
-                            <h3>Projet n°2 : création d'une application mobile</h3>
-                            <h4>
-                                <a href="https://myquiver.glideapp.io" target="_blank" aria-label="Aller sur l'application MyQuiver">MyQuiver</a>
-                            </h4>
-                            <ul id="project-details-2" class="project-details">
-                                <li id="project-details-item2-1" class="project-details-item item2">
-                                    <u>Choix technique </u>: Glide* (NoCode)
-                                </li>
-                                <li id="project-details-item2-2" class="project-details-item item2">
-                                    <u>Détails techniques</u>: application publique, synchronisation en temps réelle
-                                </li>
-                                <li id="project-details-item2-3" class="project-details-item item2">
-                                    <u>État</u>: application opérationnelle (contenu en cours de traitement)
-                                </li>
-                            </ul>
-                            </br>
-                            <p>MyQuiver est une application mobile créée et alimentée par mes soins, qui vise à décrire finement (catégorie, niveau conseillé, note, vidéo, technologie, shape, dimensions, etc.) les planches de surf proposées sur le marché et à permettre à l’utilisateur de créer un Quiver virtuel.</p>
-                            </br>
-                            <p>* <i>Glide est un outil no code permettant la création d'une application mobile. L'application GlideApp est une progressive web app (PWA) qui se partage à l'aide d'un lien URL</i>.</p>
-                        </div>
-                    </div> -->
-                    <!-- PROJECTS : n°3-->
-                    <!-- <div id="container-project3" class="container-project">
-                        <div class="container-text">
-                            <h3>Projet n°3 : création de mon portfolio web</h3>
-                            <h4>
-                                <a href="https://byronmike.github.io/MyPortfolio/" aria-label="Aller sur mon portfolio">MyPortfolio</a>
-                            </h4>
-                            <ul id="project-details-3" class="project-details">
-                                <li id="project-details-item3-1" class="project-details-item item3">
-                                    <u>Choix technique </u>: plain HTML/CSS/JS 
-                                </li>
-                                <li id="project-details-item3-2" class="project-details-item item3">
-                                    <u>Détails techniques</u>: optimisation SEO, responsive
-                                </li>
-                                <li id="project-details-item3-3" class="project-details-item item3">
-                                    <u>Hébergement</u>: GitHub
-                                </li>
-                            </ul>
-                            </br>
-                            <p>MyPortfolio est un site internet créé en 2022, afin de décrire les activités et les compétences de l’auteur dans l'univers du développement Web.</p>
-                        </div>
-                        <div class="container-img">
-                            <div id="container-myportfolio-screenshot1" class="project-container-screenshot myportfolio-screenshot">
-                                <img src="https://github.com/ByronMike/MyPortfolio/blob/main/Resources/images/MyPortfolio1.png?raw=true" alt="Screenshot de mon Portfolio Web" aria-hidden="true">
-                            </div>
-                            <div id="container-myportfolio-screenshot2" class="project-container-screenshot myportfolio-screenshot">
-                                <img src="https://github.com/ByronMike/MyPortfolio/blob/main/Resources/images/MyPortfolio2.png?raw=true" alt="Screenshot de mon Portfolio Web" aria-hidden="true">
-                            </div>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
+                  </div>
             </section>
             <!-- CONTACT SECTION -->
             <section id="contact">
@@ -339,7 +312,9 @@
                     <p>© Bekzod RakhmanAli 2022</p>
                 </div>
                 <div>
-                  <img height="40" src="./assets/images/rs_school.svg" alt="">
+                  <a href="https://rs.school/">
+                    <img height="40" src="./assets/images/rs_school.svg" alt="Course Logo">
+                  </a>
                 </div>
                 <div>
                   <h4>October 2022</h4>

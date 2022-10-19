@@ -66,6 +66,13 @@ header {
   align-items: center;
 }
 
+.code-example {
+  max-width: 600px;
+}
+.code-example img {
+  width: 100%;
+}
+
 .header-wrap-inner {
   display: inline-flex;
   align-items: center;
@@ -105,7 +112,7 @@ nav ul {
 }
 
 nav a:hover{
-  color:#e8f80e !important; 
+  color:#e8f80e !important;
 }
 
 nav #main-menu > a:nth-child(10):hover {
@@ -251,7 +258,7 @@ img {
 .cols img , .cols devicon devicon-html5-plain ,  .cols p {
   margin: 0 auto;
   text-align: center;
-  
+
 }
 
 .box-icon {
@@ -743,7 +750,7 @@ color: #ffffff;
 }
 
 /* Fin : Affichage de l'hamburger menu */
- 
+
 /* Nécessaire pour afficher l'hamburger car ne marche pas avec position fixed/stick */
   header {
       position: unset;
@@ -985,14 +992,14 @@ color: #ffffff;
   p , label , li , .button-content {
       font-size: 14px;
   }
-  
+
   #burger {
       display: none;
   }
 }
 
 @media only screen and (min-width: 1025px) {
-  
+
   #burger {
       display: none;
   }
